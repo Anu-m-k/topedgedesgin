@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Home Section</title>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+        <img src="images/TopEdge Logo -White.png" alt="Logo">
+    </div>
+    <ul class="menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="Sevice/index.html">Services</a></li>
+      <li><a href="contact/index.html">Contact</a></li>
+    </ul>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/topedge_designs?igsh=MWk1NW45ZHIxZ2UybA=="><i class="fa fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/vikasjalagar?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa fa-linkedin"></i></a>
+    </div>
+    <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="close-btn" id="closeBtn" onclick="toggleMenu()">
+      <i class="fa fa-times"></i>
+  </div>
+    <ul>
+      <li><a href="#home"><i class="fa fa-home"></i> Home</a></li>
+      <li><a href="#about"><i class="fa fa-user"></i> About</a></li>
+      <li><a href="Sevice/index.html"><i class="fa fa-info-circle"></i> Services</a></li>
+      <li><a href="contact/index.html"><i class="fa fa-phone"></i> Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Home Section -->
+  <section class="home" id="home">
+    <div class="image">
+        <img src="images/image6.webp" alt="Home Image">
+    </div>
+    <div class="content1">
+        <h1>Welcome to Our Website</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
+        <a href="#about" class="btn">Learn More</a>
+    </div>
+</section>
+
+<!-- Image Slider -->
+<div class="slider">
+    <div class="slides">
+        <div class="slide">
+            <img src="images/logo branding.jpg" alt="Slide 1">
+            <div class="content">
+                <h2>Latest Update 1</h2>
+                <p>This is the content for the first slide.</p>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="images/project-5.png" alt="Slide 2">
+            <div class="content">
+                <h2>Latest Update 2</h2>
+                <p>This is the content for the second slide.</p>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="images/project-4.png" alt="Slide 3">
+            <div class="content">
+                <h2>Latest Update 3</h2>
+                <p>This is the content for the third slide.</p>
+            </div>
+        </div>
+    </div>
+    <div class="indicators">
+        <span class="indicator"></span>
+        <span class="indicator"></span>
+        <span class="indicator"></span>
+    </div>
+</div>
+
+<!--collabration-->
+<section class="brands" id="brands">
+  <h2>Collaborated with Brands</h2>
+  <div class="brand-logos">
+      <img src="images/project-6.png" alt="Brand 1">
+      <img src="images/project-5.png" alt="Brand 2">
+      <img src="images/project-4.png" alt="Brand 3">
+      <img src="images/project-3.jpg" alt="Brand 4">
+      <img src="images/project-2.png" alt="Brand 5">
+  </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-container">
+      <div class="footer-content">
+          <h3>Contact Us</h3>
+          <p><i class="fa fa-phone"></i> +91 6363131432</p>
+          <p><i class="fa fa-envelope"></i><a href="mailto:info@example.com">info@example.com</a></p>
+      </div>
+      <div class="footer-nav">
+          <h3>Quick Links</h3>
+          <ul>
+              <li><a href="#home"><i class="fa fa-home"></i> Home</a></li>
+              <li><a href="#about"><i class="fa fa-user"></i> About</a></li>
+              <li><a href="Sevice/index.html"><i class="fa fa-info-circle"></i> Services</a></li>
+              <li><a href="contact/index.html"><i class="fa fa-phone"></i> Get in touch</a></li>
+          </ul>
+      </div>
+      <div class="footer-social">
+          <h3>Follow Us</h3>
+          <a href="https://www.instagram.com/topedge_designs?igsh=MWk1NW45ZHIxZ2UybA=="><i class="fa fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/vikasjalagar?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa fa-linkedin"></i></a>
+      </div>
+  </div>
+  <div class="footer-bottom">
+      <p>&copy; 2024 TopEdge Designs</p>
+      
+  </div>
+</footer>
+
+<script src="javascript.js"></script>
+
+</body>
+</html>

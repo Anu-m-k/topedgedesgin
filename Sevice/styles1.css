@@ -1,0 +1,105 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+
+/* Service Section */
+.services-section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.section-title {
+    font-size: 2em;
+    margin-bottom: 40px;
+    color: #fbf8f8;
+}
+
+/* Gallery Container */
+.service-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    margin-top: 30px;
+}
+
+/* Individual Service Item */
+.service-item {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+/* Image Container */
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+/* Image Styling */
+.service-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Hover Effect: Zoom-in */
+.service-item:hover .service-image {
+    transform: scale(1.1); /* Zoom-in effect */
+}
+
+/* Hover Effect: Change opacity */
+.service-item:hover .service-image {
+    opacity: 0.9;
+}
+
+/* Description Styling */
+.service-description {
+    padding: 15px;
+    font-size: 1rem;
+    color: #555;
+    background-color: #f8f8f8;
+    margin-top: -10px; /* To adjust overlap effect */
+    transition: background-color 0.3s ease;
+}
+
+/* Hover Effect: Change Description Background */
+.service-item:hover .service-description {
+    background-color: #333;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .service-gallery {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .service-gallery {
+        grid-template-columns: 1fr;
+    }
+}

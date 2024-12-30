@@ -1,0 +1,158 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+/* Main container (Flexbox for layout) */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    opacity: 0;
+    animation: fadeIn 1.5s forwards;
+}
+
+/* Contact form container */
+.contact-form-container {
+    background-color: #444;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    width: 45%;
+    animation: slideInFromLeft 1s ease-out;
+}
+
+/* Image container */
+.image-container {
+    width: 50%;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Form header */
+.contact-form-container h2 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+p{
+    color:#757373;
+}
+
+/* Input container */
+.input-container {
+    margin-bottom: 15px;
+}
+
+/* Labels */
+.input-container label {
+    display: block;
+    margin-bottom: 5px;
+    color: #bbb;
+    font-weight: bold;
+}
+
+/* Input fields */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    background-color: #555;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    background-color: #666;
+    outline: none;
+}
+
+/* Submit button */
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #555;
+}
+
+/* Input focus effect */
+input:focus, textarea:focus {
+    background-color: #666;
+}
+
+/* Form container hover effect */
+.contact-form-container:hover {
+    transform: scale(1.05);
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Slide-in animation for the form */
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-50%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .contact-form-container,
+    .image-container {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .image-container img {
+        display: none;
+    }
+}
